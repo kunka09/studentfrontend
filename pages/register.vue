@@ -39,7 +39,7 @@ export default {
     },
     methods: {
         async onRegister() {
-            this.$axios.post('http://127.0.0.1:8000/api/register', this.user)
+            this.$axios.post('https://lentrix.tk/jim/api/register', this.user)
             .then((res)=>{
                 if(res.status==202) {
                     alert(res.data.message)
