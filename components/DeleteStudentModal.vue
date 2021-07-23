@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         async onDelete() {
-            this.$axios.delete('http://127.0.0.1:8000/api/students/'+this.student.id)
+            this.$axios.delete('https://lentrix.tk/jim/api/login/students'+this.student.id)
             .then((res)=>{
                 if(res.status==202) {
                     alert('Student deleted')

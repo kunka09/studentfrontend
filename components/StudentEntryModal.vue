@@ -59,7 +59,7 @@ export default {
     },
     methods: {
         async onSubmit() {
-            this.$axios.post('http://127.0.0.1:8000/api/students', this.students)
+            this.$axios.post('https://lentrix.tk/jim/api/students', this.students)
             .then((res)=>{
                 if(res.status==202) {
                     alert('Student added successfully ')

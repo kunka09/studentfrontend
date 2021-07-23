@@ -55,7 +55,7 @@ export default {
     },
     methods: {
         async onSubmit() {
-            this.$axios.put('http://127.0.0.1:8000/api/students/'+this.student.id, this.student)
+            this.$axios.put('https://lentrix.tk/jim/api/students'+this.student.id, this.student)
                 .then((res)=>{
                     if(res.status==202) {
                         alert('Update successfully!!')

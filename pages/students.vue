@@ -59,7 +59,7 @@ export default {
     },
     methods: {
         async getAll() {
-            await this.$axios.get('http://127.0.0.1:8000/api/students')
+            await this.$axios.get('https://lentrix.tk/jim/api/students')
             .then((res)=>{
                 if(res.status==200) {
                     this.students =res.data
